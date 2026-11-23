@@ -1,0 +1,28 @@
+name: 大意の誤り
+description: 大意の誤りや、よりよい大意を知らせる
+title: "[訳] 吉岡禅寺洞 句集（『現代日本文學大系 95 現代句集』より） "
+labels: ["訳"]
+body:
+  - type: input
+    id: block
+    attributes:
+      label: 段落ID
+      description: "行頭にある ID（例: yoshioka-zenjido-73741477-000001）"
+    validations:
+      required: true
+  - type: textarea
+    id: before
+    attributes:
+      label: いまの大意
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: 直した大意
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・根拠
